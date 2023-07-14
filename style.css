@@ -123,9 +123,9 @@ p#footer {
 }
 
 #email-text {
-  padding: 0.2rem;
+  padding: 0.4rem 0.6rem;
   border: 1px solid #131313;
-  border-radius: 10px;
+  border-radius: 4px;
 }
 span.email-copy-ico {
   color: black;
@@ -135,8 +135,7 @@ span.email-copy-ico {
   vertical-align: middle;
   background-color: #cccccc;
   padding: 0.1rem 0.4rem;
-  border: 1px;
-  border-radius: 10px;
+  border-radius: 4px;
 }
 .email-ico {
   margin-right: 12px;
@@ -149,22 +148,37 @@ span.email-copy-ico:active {
   color: #2c2c2c;
 }
 .imgcopy {
-  width: 18px;
-  size: 18px;
+  width: 17px;
+  size: 17px;
 }
 .txt-copiar {
   font-size: 13px;
 }
 
+.espaco-git {
+  margin-bottom: 4rem;
+}
 
-.weatherapp-link {
-  font-size: 85%;
-  color: blue;
+
+.portfolio-button {
+  font-size: 13px;
+  display: inline-block;
+  padding: 0.1rem 0.2rem;
+  background-color: #cccccc;
+  color: black;
+  text-decoration: none;
+  border-radius: 4px;
+}
+.portfolio-button i {
+  margin-right: 5px;
+}
+.portfolio-button:hover {
+  background-color: #e0e0e0;
 }
 
 /*
 
-<div class="nav-signin-tt nav-flyout" style="display: none; position: absolute; top: -5px; left: 1226.55px; opacity: 1;"><div class="nav-arrow"><div class="nav-arrow-inner"></div></div><div id="nav-signin-tooltip"><a href="https://www.amazon.com.br/ap/signin?openid.pape.max_auth_age=0&amp;openid.return_to=https%3A%2F%2Fwww.amazon.com.br%2F%3Fref_%3Dnav_custrec_signin&amp;openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;openid.assoc_handle=brflex&amp;openid.mode=checkid_setup&amp;openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0" class="nav-action-signin-button" data-nav-role="signin" data-nav-ref="nav_custrec_signin"><span class="nav-action-inner">Faça seu login</span></a><div class="nav-signin-tooltip-footer">Cliente novo? <a href="https://www.amazon.com.br/ap/register?openid.pape.max_auth_age=0&amp;openid.return_to=https%3A%2F%2Fwww.amazon.com.br%2F%3F_encoding%3DUTF8%26ref_%3Dnav_custrec_newcust&amp;openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;openid.assoc_handle=brflex&amp;openid.mode=checkid_setup&amp;openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0" class="nav-a">Comece aqui.</a></div></div><div class="nav-flyout-buffer-left"></div><div class="nav-flyout-buffer-right"></div><div class="nav-flyout-buffer-top"></div><div class="nav-flyout-buffer-bottom"></div></div>
+Animações
 
 */
 
@@ -192,98 +206,38 @@ span.email-copy-ico:active {
   RESPONSIVIDADE
 */
 
-@media (max-width: 510px) {
 
+@media (min-width: 600px) and (max-width: 689px) {
+
+  p {
+    font-size: 93.3%;
+  }
   span.email-copy-ico {
-    margin-left: 6rem;
-    margin-top: 1rem;
-  }
-  h2#nome-h2 {
-    font-size: 150%;
-    padding: 1%;
-  }
-
-}
+    margin-top: 0.4rem;
 
 
-@media (max-width: 600px) {
-
-  span.email-copy-ico {
-    margin-left: 6rem;
-    margin-top: 1rem;
-  }
-  h2#nome-h2 {
-    font-size: 160%;
-    padding: 1%;
-  }
-
-}
-
-
-@media (min-width: 690px) and (max-width: 735px) {
-
-  span.email-copy-ico {
-    margin-left: 4rem;
-    margin-top: 0.6rem;
-  }
-  * {
-    font-size: 99%;
-  }
-  h2#nome-h2 {
-    font-size: 130%;
-    padding: 10px 7px;
-  }
-  #email-text {
-    font-size: 10.7px;
-  }
-
-}
-
-@media (min-width: 736px) and (max-width: 900px) {
-
-  span.email-copy-ico {
-    margin-left: 4.2rem;
-    margin-top: 0.6rem;
-  }
-  * {
-    font-size: 99%;
-  }
-  h2#nome-h2 {
-
-    padding: 10px 7px;
-  }
-  #email-text {
-    font-size: 11.5px;
-  }
-
-}
-
-
-@media (min-width: 601px) and (max-width: 689px) {
-
-  span.email-copy-ico {
-    margin-left: 2.3rem;
-    margin-top: 0.5rem;
+    margin-left: 50px;
+    padding: 0.05rem 0.3rem;
   }
   .imgcopy {
-    width: 13px;
-    size: 13px;
+    width: 14px;
+    size: 14px;
+    margin-top: 3px;
   }
   .txt-copiar {
     font-size: 11px;
+  }
+  #email-text {
+    font-size: 67%;
+    padding: 0.3rem 0.3rem;
   }
   h2#nome-h2 {
     font-size: 120%;
     padding: 5px 5px;
   }
-  p {
-    font-size: 95%;
-  }
-  #email-text {
-    font-size: 60.2%;
-    padding: 0.2rem;
-    border: 1px solid #131313;
-    border-radius: 10px;
+  #home-icon {
+    margin-right: 12px;
+    text-align: left;
   }
   .w3-large {
     font-size: 15px!important;
@@ -291,19 +245,56 @@ span.email-copy-ico:active {
   .w3-xlarge {
     font-size: 18px!important;
   }
-  #home-icon {
-    margin-right: 12px;
-    text-align: left;
-  }
 
 }
+@media (max-width: 655px) {
+  * {
+    font-size: 97%;
+  }
+  span.email-copy-ico {
+    margin-left: 45px;
+  }
+  #email-text {
+    font-size: 69%;
+    padding: 0.3rem 0.3rem;
+  }
+}
+@media (min-width: 690px) and (max-width: 735px) {
+  * {
+    font-size: 99%;
+  }
+  span.email-copy-ico {
+    margin-left: 4rem;
+    margin-top: 0.6rem;
+  }
+  h2#nome-h2 {
+    font-size: 130%;
+    padding: 10px 7px;
+  }
+  #email-text {
+    font-size: 66.7%;
+  }
+}
 
-
-@media (min-width: 901px) and (max-width: 1215px) {
-  
+@media (min-width: 736px) and (max-width: 900px) {
+  * {
+    font-size: 100%;
+  }
+  span.email-copy-ico {
+    margin-left: 4rem;
+    margin-top: 0.6rem;
+  }
+  h2#nome-h2 {
+    font-size: 130%;
+    padding: 10px 7px;
+  }
+  #email-text {
+    font-size: 70%;
+  }
+}
+@media (min-width: 901px) and (max-width: 1232px) {
   span.email-copy-ico {
     margin-left: 6rem;
     margin-top: 1rem;
   }
-
 }

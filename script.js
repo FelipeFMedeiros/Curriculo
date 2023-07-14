@@ -18,13 +18,17 @@ document.addEventListener("DOMContentLoaded", function () {
   setTimeout(() => {
     if (languageButton.classList.contains("active") && i == 0) {
       console.log("Fechando automaticamente.");
-      languageButton.classList.remove("active");
+      languagePanel.style.animation = "fade-out 1.5s forwards";
+      setTimeout(() => {
+        languageButton.classList.remove("active");
+      }, 1500);
     }
-  }, 5000);
+  }, 4000);
 });
 
 // Ativando language button ao clicar
 languageButton.addEventListener("click", function () {
+  languageButton.style.pointerEvents = "none";
   languagePanel.style.animation = "none";
   languagePanel.style.animation = "fade-in 1s forwards";
 
@@ -34,25 +38,32 @@ languageButton.addEventListener("click", function () {
     i++;
     setTimeout(() => {
       this.classList.toggle("active");
+      languageButton.style.pointerEvents = "auto";
     }, 1000);
   } else {
-    //languagePanel.style.animation = "fade-in 1.5s forwards";
     this.classList.toggle("active");
+    setTimeout(() => {
+      languageButton.style.pointerEvents = "auto";
+    }, 1000);
   }
 });
 
 // Removendo o botão ao clicar fora da div
 window.addEventListener("click", (event) => {
-  if (
-    languageButton.classList.contains("active") &&
-    !event.target.closest(".language-button")
-  ) {
-    languagePanel.style.animation = "fade-out 1s forwards";
-    i++;
-    setTimeout(function () {
-      console.log("Fechando (click fora da div).");
-      languageButton.classList.remove("active");
-    }, 1000);
+  if (languageButton.style.pointerEvents != "none") {
+    if (
+      languageButton.classList.contains("active") &&
+      !event.target.closest(".language-button")
+    ) {
+      languageButton.style.pointerEvents = "none";
+      languagePanel.style.animation = "fade-out 1s forwards";
+      i++;
+      setTimeout(function () {
+        console.log("Fechando (click fora da div).");
+        languageButton.classList.remove("active");
+        languageButton.style.pointerEvents = "auto";
+      }, 1000);
+    }
   }
 });
 
@@ -69,19 +80,20 @@ function copiarTexto(texto) {
 }
 copy.addEventListener("click", () => {
   if (
-    txtCopiar.innerHTML != " Copiar email" && txtCopiar.innerHTML != " Copiado!") {
-      copy.style.pointerEvents = "none";
-      copyIMG.src = "check.svg";
-      txtCopiar.innerHTML = " Copied!";
-      copiarTexto(email.innerHTML);
-  
-      setTimeout(() => {
-        copyIMG.src = "clipboard.svg";
-        txtCopiar.innerHTML = " Copy email";
-        copy.style.pointerEvents = "auto";
-      }, 1500);
-  }
-  else {
+    txtCopiar.innerHTML != " Copiar email" &&
+    txtCopiar.innerHTML != " Copiado!"
+  ) {
+    copy.style.pointerEvents = "none";
+    copyIMG.src = "check.svg";
+    txtCopiar.innerHTML = " Copied!";
+    copiarTexto(email.innerHTML);
+
+    setTimeout(() => {
+      copyIMG.src = "clipboard.svg";
+      txtCopiar.innerHTML = " Copy email";
+      copy.style.pointerEvents = "auto";
+    }, 1500);
+  } else {
     copy.style.pointerEvents = "none";
     copyIMG.src = "assets/check.svg";
     txtCopiar.innerHTML = " Copiado!";
