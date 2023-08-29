@@ -26,22 +26,13 @@ p.subtexto {
   margin-bottom: -15px;
 }
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 77a4e67 (Atualização de interface e responsividade.)
 h2#nome-h2 {
   color: #f0f0f0;
   text-align: center;
   border: 1px solid #333;
-<<<<<<< HEAD
-  border-radius: 50px;
-  background-color: #333;
-=======
   border-radius: 3cqb;
   background-color: #333;
   font-weight: 900;
->>>>>>> 77a4e67 (Atualização de interface e responsividade.)
 }
 
 hr#hr1 {
@@ -135,32 +126,19 @@ p#footer {
   padding: 0.4rem 0.6rem;
   border: 1px solid #131313;
   border-radius: 4px;
-<<<<<<< HEAD
-=======
   font-size: 15px;
->>>>>>> 77a4e67 (Atualização de interface e responsividade.)
 }
 span.email-copy-ico {
   color: black;
   cursor: pointer;
-<<<<<<< HEAD
-  display: inline-block;
-  margin-left: 5px;
-  vertical-align: middle;
-  background-color: #cccccc;
-  padding: 0.1rem 0.4rem;
-=======
   vertical-align: middle;
   background-color: #cccccc;
   padding: 0.4rem 0.6rem;
->>>>>>> 77a4e67 (Atualização de interface e responsividade.)
   border-radius: 4px;
 }
 .email-ico {
   margin-right: 12px;
 }
-<<<<<<< HEAD
-=======
 .container-2 {
   display: flex;
   align-items: center;
@@ -168,7 +146,6 @@ span.email-copy-ico {
 .div-emailcopy {
   margin-right: 1rem;
 }
->>>>>>> 77a4e67 (Atualização de interface e responsividade.)
 
 span.email-copy-ico:hover {
   background-color: #e0e0e0;
@@ -181,21 +158,13 @@ span.email-copy-ico:active {
   size: 17px;
 }
 .txt-copiar {
-<<<<<<< HEAD
-  font-size: 13px;
-=======
   font-size: 15px;
->>>>>>> 77a4e67 (Atualização de interface e responsividade.)
 }
 
 .espaco-git {
   margin-bottom: 4rem;
 }
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 77a4e67 (Atualização de interface e responsividade.)
 .portfolio-button {
   font-size: 13px;
   display: inline-block;
@@ -236,136 +205,15 @@ Animações
   }
 }
 
-<<<<<<< HEAD
-
-
-=======
->>>>>>> 77a4e67 (Atualização de interface e responsividade.)
 /* 
   RESPONSIVIDADE
 */
 
 @media (min-width: 200px) and (max-width: 219px) {
-<<<<<<< HEAD
-  p {
-    font-size: 82%;
-  }
-=======
->>>>>>> 77a4e67 (Atualização de interface e responsividade.)
   h2#nome-h2 {
     font-size: 145%;
     padding: 10px 7px;
   }
-<<<<<<< HEAD
-  span.email-copy-ico {
-    margin-top: 0.5rem;
-    margin-right: 1rem;
-    padding: 0.05rem 0.3rem;
-  }
-  .imgcopy {
-    width: 12px;
-    size: 12px;
-    margin-top: 3px;
-  }
-  .txt-copiar {
-    font-size: 9px;
-  }
-  #home-icon {
-    margin-right: 12px;
-    text-align: left;
-  }
-  .w3-large {
-    font-size: 15px!important;
-  }
-  .w3-xlarge {
-    font-size: 18px!important;
-  }
-}
-@media (min-width: 220px) and (max-width: 299px) {
-  h2#nome-h2 {
-    font-size: 145%;
-    padding: 10px 7px;
-  }
-  span.email-copy-ico {
-    margin-top: 0.5rem;
-    margin-right: 1rem;
-    padding: 0.05rem 0.3rem;
-  }
-  .imgcopy {
-    width: 13px;
-    size: 13px;
-    margin-top: 3px;
-  }
-  .txt-copiar {
-    font-size: 10px;
-  }
-}
-@media (min-width: 300px) and (max-width: 355px) {
-  h2#nome-h2 {
-    font-size: 150%;
-    padding: 10px 7px;
-  }
-  span.email-copy-ico {
-    margin-top: 0.5rem;
-    margin-right: 1rem;
-    padding: 0.05rem 0.3rem;
-  }
-  .imgcopy {
-    width: 13px;
-    size: 13px;
-    margin-top: 3px;
-  }
-  .txt-copiar {
-    font-size: 10px;
-  }
-}
-
-@media (min-width: 356px) and (max-width: 367px) {
-  h2#nome-h2 {
-    font-size: 170%;
-    padding: 10px 7px;
-  }
-  span.email-copy-ico {
-    margin-top: 0rem;
-    margin-left: 1rem;
-    padding: 0.05rem 0.3rem;
-  }
-  .imgcopy {
-    width: 14px;
-    size: 14px;
-    margin-top: 3px;
-  }
-  .txt-copiar {
-    font-size: 12px;
-  }
-  #home-icon {
-    margin-right: 12px;
-    text-align: left;
-  }
-  .w3-large {
-    font-size: 15px!important;
-  }
-  .w3-xlarge {
-    font-size: 18px!important;
-  }
-}
-
-
-@media (min-width: 600px) and (max-width: 689px) {
-
-  p {
-    font-size: 93.3%;
-  }
-  span.email-copy-ico {
-    margin-top: 0.4rem;
-    margin-left: 50px;
-    padding: 0.05rem 0.3rem;
-  }
-  .imgcopy {
-    width: 14px;
-    size: 14px;
-    margin-top: 3px;
-=======
   #email-text {
     padding: 0.2rem 0.2rem;
     font-size: 10px;
@@ -382,20 +230,10 @@ Animações
   .imgcopy {
     width: 17px;
     size: 17px;
->>>>>>> 77a4e67 (Atualização de interface e responsividade.)
   }
   .txt-copiar {
     font-size: 11px;
   }
-<<<<<<< HEAD
-  #email-text {
-    font-size: 67%;
-    padding: 0.3rem 0.3rem;
-  }
-  h2#nome-h2 {
-    font-size: 120%;
-    padding: 5px 5px;
-=======
   #home-icon {
     margin-right: 12px;
     text-align: left;
@@ -477,34 +315,12 @@ Animações
   }
   .txt-copiar {
     font-size: 11px;
->>>>>>> 77a4e67 (Atualização de interface e responsividade.)
   }
   #home-icon {
     margin-right: 12px;
     text-align: left;
   }
   .w3-large {
-<<<<<<< HEAD
-    font-size: 15px!important;
-  }
-  .w3-xlarge {
-    font-size: 18px!important;
-  }
-
-}
-@media (max-width: 655px) {
-  * {
-    font-size: 97%;
-  }
-  span.email-copy-ico {
-    margin-left: 45px;
-  }
-  #email-text {
-    font-size: 69%;
-    padding: 0.3rem 0.3rem;
-  }
-}
-=======
     font-size: 15px !important;
   }
   .w3-xlarge {
@@ -550,46 +366,10 @@ Animações
   }
 }
 
->>>>>>> 77a4e67 (Atualização de interface e responsividade.)
 @media (min-width: 690px) and (max-width: 735px) {
   * {
     font-size: 99%;
   }
-<<<<<<< HEAD
-  span.email-copy-ico {
-    margin-left: 4rem;
-    margin-top: 0.6rem;
-  }
-  h2#nome-h2 {
-    font-size: 130%;
-    padding: 10px 7px;
-  }
-  #email-text {
-    font-size: 66.7%;
-  }
-}
-
-@media (min-width: 736px) and (max-width: 900px) {
-  * {
-    font-size: 100%;
-  }
-  span.email-copy-ico {
-    margin-left: 4rem;
-    margin-top: 0.6rem;
-  }
-  h2#nome-h2 {
-    font-size: 130%;
-    padding: 10px 7px;
-  }
-  #email-text {
-    font-size: 70%;
-  }
-}
-@media (min-width: 901px) and (max-width: 1232px) {
-  span.email-copy-ico {
-    margin-left: 6rem;
-    margin-top: 1rem;
-=======
   #email-text {
     padding: 0.4rem 0.4rem;
     font-size: 12px;
@@ -741,6 +521,5 @@ Animações
   }
   .txt-copiar {
     font-size: 10px;
->>>>>>> 77a4e67 (Atualização de interface e responsividade.)
   }
 }
