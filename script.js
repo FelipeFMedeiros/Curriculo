@@ -23,7 +23,11 @@ document.addEventListener("DOMContentLoaded", function () {
         languageButton.classList.remove("active");
       }, 1500);
     }
+<<<<<<< HEAD
   }, 4000);
+=======
+  }, 2500);
+>>>>>>> 77a4e67 (Atualização de interface e responsividade.)
 });
 
 // Ativando language button ao clicar
@@ -106,4 +110,8 @@ copy.addEventListener("click", () => {
       copy.style.pointerEvents = "auto";
     }, 1500);
   }
+<<<<<<< HEAD
 });
+=======
+});
+>>>>>>> 77a4e67 (Atualização de interface e responsividade.)
