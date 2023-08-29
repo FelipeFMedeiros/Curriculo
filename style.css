@@ -33,6 +33,7 @@ h2#nome-h2 {
   border-radius: 3cqb;
   background-color: #333;
   font-weight: 900;
+  padding: 5px;
 }
 
 hr#hr1 {
@@ -126,7 +127,7 @@ p#footer {
   padding: 0.4rem 0.6rem;
   border: 1px solid #131313;
   border-radius: 4px;
-  font-size: 15px;
+  font-size: 13px;
 }
 span.email-copy-ico {
   color: black;
@@ -158,7 +159,7 @@ span.email-copy-ico:active {
   size: 17px;
 }
 .txt-copiar {
-  font-size: 15px;
+  font-size: 12px;
 }
 
 .espaco-git {
@@ -407,7 +408,7 @@ Animações
   }
   .email-ico {
     left: 50%;
-    margin-right: 0;
+    margin-right: -10px;
     margin-bottom: 10px;
   }
   .container-2 {
@@ -423,7 +424,8 @@ Animações
     font-size: 12px;
   }
   .email-ico {
-    margin-right: 12px;
+    margin-right: 5px;
+    padding-bottom: 10px;
   }
   .container-2 {
     display: block;
@@ -446,6 +448,7 @@ Animações
   }
   .email-ico {
     margin-right: 12px;
+    padding-bottom: 15px;
   }
   .container-2 {
     display: block;
@@ -468,6 +471,7 @@ Animações
   }
   .email-ico {
     margin-right: 12px;
+    padding-bottom: 15px;
   }
   .container-2 {
     display: block;
@@ -498,19 +502,24 @@ Animações
     size: 15px;
   }
   .txt-copiar {
-    font-size: 10px;
+    font-size: 9px;
+  }
+  .div-emailcopy {
+    margin-right: 0;
+  }
+  .copy-div {
+    margin-right: -1rem;
   }
 }
 
 @media (min-width: 1176px) and (max-width: 1335px) {
   #email-text {
-    padding: 0.4rem 0.6rem;
-    font-size: 13px;
+    padding: 0.4rem 0.4rem;
+    font-size: 11px;
   }
   span.email-copy-ico {
-    vertical-align: middle;
     background-color: #cccccc;
-    padding: 0.4rem 0.6rem;
+    padding: 0.4rem 0.4rem;
   }
   .email-ico {
     margin-right: 12px;
