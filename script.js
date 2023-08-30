@@ -17,12 +17,14 @@ document.addEventListener("DOMContentLoaded", function () {
   languageButton.classList.toggle("active");
   setTimeout(() => {
     if (languageButton.classList.contains("active") && i == 0) {
+      languageButton.style.pointerEvents = "none";
       console.log("Fechando automaticamente.");
       languagePanel.style.animation = "fade-out 1.5s forwards";
       setTimeout(() => {
         languageButton.classList.remove("active");
       }, 1500);
     }
+    languageButton.style.pointerEvents = "auto";
   }, 2500);
 });
 
