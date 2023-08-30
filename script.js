@@ -8,19 +8,22 @@ const copyIMG = document.querySelector(".imgcopy");
 const txtCopiar = document.querySelector(".txt-copiar");
 const email = document.querySelector("#email-text");
 console.log(email.innerHTML);
-let i = 0;
+let i = 0,
+  autoCloseTimeout,
+  count = 0;
 
 // Carregando script ao entrar na página
 document.addEventListener("DOMContentLoaded", function () {
   languagePanel.style.animation = "none";
   languagePanel.style.animation = "fade-in 1.5s forwards";
   languageButton.classList.toggle("active");
-  setTimeout(() => {
+  autoCloseTimeout = setTimeout(() => {
     if (languageButton.classList.contains("active") && i == 0) {
       languageButton.style.pointerEvents = "none";
       console.log("Fechando automaticamente.");
       languagePanel.style.animation = "fade-out 1.5s forwards";
       setTimeout(() => {
+        count++;
         languageButton.classList.remove("active");
       }, 1500);
     }
@@ -30,41 +33,57 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Ativando language button ao clicar
 languageButton.addEventListener("click", function () {
-  languageButton.style.pointerEvents = "none";
-  languagePanel.style.animation = "none";
-  languagePanel.style.animation = "fade-in 1s forwards";
-
-  if (languageButton.classList.contains("active")) {
-    console.log("Fechando");
-    languagePanel.style.animation = "fade-out 1s forwards";
-    i++;
+  if (count == 0) {
+    languageButton.style.pointerEvents = "none";
     setTimeout(() => {
-      this.classList.toggle("active");
       languageButton.style.pointerEvents = "auto";
     }, 1000);
   } else {
-    this.classList.toggle("active");
-    setTimeout(() => {
-      languageButton.style.pointerEvents = "auto";
-    }, 1000);
+    clearTimeout(autoCloseTimeout);
+    languageButton.style.pointerEvents = "none";
+    languagePanel.style.animation = "none";
+    languagePanel.style.animation = "fade-in 1s forwards";
+
+    if (languageButton.classList.contains("active")) {
+      console.log("Fechando");
+      languagePanel.style.animation = "fade-out 1s forwards";
+      i++;
+      setTimeout(() => {
+        this.classList.toggle("active");
+        languageButton.style.pointerEvents = "auto";
+      }, 1000);
+    } else {
+      this.classList.toggle("active");
+      setTimeout(() => {
+        languageButton.style.pointerEvents = "auto";
+      }, 1000);
+    }
   }
 });
 
 // Removendo o botão ao clicar fora da div
 window.addEventListener("click", (event) => {
-  if (languageButton.style.pointerEvents != "none") {
-    if (
-      languageButton.classList.contains("active") &&
-      !event.target.closest(".language-button")
-    ) {
-      languageButton.style.pointerEvents = "none";
-      languagePanel.style.animation = "fade-out 1s forwards";
-      i++;
-      setTimeout(function () {
-        console.log("Fechando (click fora da div).");
-        languageButton.classList.remove("active");
-        languageButton.style.pointerEvents = "auto";
-      }, 1000);
+  if (count == 0) {
+    languageButton.style.pointerEvents = "none";
+    setTimeout(() => {
+      languageButton.style.pointerEvents = "auto";
+    }, 1000);
+  } else {
+    if (languageButton.style.pointerEvents != "none") {
+      if (
+        languageButton.classList.contains("active") &&
+        !event.target.closest(".language-button")
+      ) {
+        clearTimeout(autoCloseTimeout);
+        languageButton.style.pointerEvents = "none";
+        languagePanel.style.animation = "fade-out 1s forwards";
+        i++;
+        setTimeout(function () {
+          console.log("Fechando (click fora da div).");
+          languageButton.classList.remove("active");
+          languageButton.style.pointerEvents = "auto";
+        }, 1000);
+      }
     }
   }
 });
