@@ -1,4 +1,4 @@
-import { Copy, Github, Instagram, Linkedin, Check, Mail, Phone } from 'lucide-react';
+import { Copy, Github, Linkedin, Check, Mail, Phone } from 'lucide-react';
 import { useState } from 'react';
 
 interface ContactItemProps {
@@ -70,11 +70,6 @@ const Contact = () => {
                 href="https://www.linkedin.com/in/felipe-fmedeiros/"
                 icon={<Linkedin size={16} />}
                 label="LinkedIn"
-            />
-            <ContactItem
-                href="https://instagram.com/felipef.medeiros"
-                icon={<Instagram size={16} />}
-                label="Instagram"
             />
         </div>
     );
