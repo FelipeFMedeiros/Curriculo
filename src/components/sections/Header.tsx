@@ -1,4 +1,4 @@
-import Contact from '@/components/sections/Contact';
+import Contact from '@components/sections/Contact';
 import { Calendar, MapPin, Home } from 'lucide-react';
 
 const Header = () => {
