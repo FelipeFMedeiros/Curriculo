@@ -1,0 +1,534 @@
+/* Importando .css */
+@import url("https://www.w3schools.com/w3css/4/w3.css");
+/* Importando fonte */
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+/* Importando ícones */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+
+#home-icon {
+  margin-right: 8px;
+  text-align: left;
+}
+
+p.categoria-academica {
+  margin-top: -0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+p.justify {
+  text-align: justify;
+}
+
+h5.educacaotittle {
+  margin-bottom: -12px;
+}
+p.subtexto {
+  margin-bottom: -15px;
+}
+
+h2#nome-h2 {
+  color: #f0f0f0;
+  text-align: center;
+  border: 1px solid #333;
+  border-radius: 3cqb;
+  background-color: #333;
+  font-weight: 900;
+  padding: 5px;
+}
+
+hr#hr1 {
+  height: 3px;
+  border-radius: 25px;
+  background-color: black;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+hr#hr2 {
+  height: 1.5px;
+  background-color: rgb(61, 61, 61);
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.icon {
+  width: 5rem;
+  padding-bottom: 1rem;
+}
+p#footer {
+  font-size: 1.1rem;
+}
+
+.language-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #f0f0f0;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gear-icon {
+  width: 30px;
+  height: 30px;
+  background-image: url("assets/gear-solid.svg");
+  background-size: cover;
+  transition: transform 0.5s;
+}
+
+.language-panel {
+  display: none;
+  position: absolute;
+  bottom: 60px;
+  right: 0;
+  background-color: #cccccc;
+  border-radius: 5px;
+  padding: 10px;
+}
+.language-panel ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.language-panel ul li {
+  margin-bottom: 5px;
+  border-bottom: 1px solid #131313;
+}
+.language-panel ul li a {
+  font-size: 17px;
+  color: #333;
+  text-decoration: none;
+}
+.language-panel ul li a:hover {
+  color: white;
+  background-color: rgb(109, 109, 109);
+  cursor: pointer;
+}
+.language-button:hover .gear-icon {
+  cursor: pointer;
+  transform: rotate(360deg);
+}
+.language-button.active .language-panel {
+  display: block;
+}
+.language-button:active .gear-icon {
+  background-image: url("assets/gear-solid-colored.svg");
+  width: 35px;
+  height: 35px;
+}
+.language-button.active .gear-icon {
+  background-image: url("assets/gear-solid-colored.svg");
+}
+
+#email-text {
+  padding: 0.4rem 0.6rem;
+  border: 1px solid #131313;
+  border-radius: 4px;
+  font-size: 13px;
+}
+span.email-copy-ico {
+  color: black;
+  cursor: pointer;
+  vertical-align: middle;
+  background-color: #cccccc;
+  padding: 0.4rem 0.6rem;
+  border-radius: 4px;
+}
+.email-ico {
+  margin-right: 12px;
+}
+.container-2 {
+  display: flex;
+  align-items: center;
+}
+.div-emailcopy {
+  margin-right: 1rem;
+}
+
+span.email-copy-ico:hover {
+  background-color: #e0e0e0;
+}
+span.email-copy-ico:active {
+  color: #2c2c2c;
+}
+.imgcopy {
+  width: 17px;
+  size: 17px;
+}
+.txt-copiar {
+  font-size: 12px;
+}
+
+.espaco-git {
+  margin-bottom: 3rem;
+}
+
+.portfolio-button {
+  font-size: 13px;
+  display: inline-block;
+  padding: 0.1rem 0.2rem;
+  background-color: #cccccc;
+  color: black;
+  text-decoration: none;
+  border-radius: 4px;
+}
+.portfolio-button i {
+  margin-right: 5px;
+}
+.portfolio-button:hover {
+  background-color: #e0e0e0;
+}
+
+/*
+
+Animações
+
+*/
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* 
+  RESPONSIVIDADE
+*/
+
+@media (min-width: 200px) and (max-width: 219px) {
+  h2#nome-h2 {
+    font-size: 145%;
+    padding: 10px 7px;
+  }
+  #email-text {
+    padding: 0.2rem 0.2rem;
+    font-size: 10px;
+    margin-right: 12px;
+  }
+  .email-ico {
+    margin-left: 25%;
+  }
+  .container-2 {
+    display: block;
+    align-items: center;
+    text-align: center;
+  }
+  .imgcopy {
+    width: 17px;
+    size: 17px;
+  }
+  .txt-copiar {
+    font-size: 11px;
+  }
+  #home-icon {
+    margin-right: 12px;
+    text-align: left;
+  }
+  .w3-large {
+    font-size: 15px !important;
+  }
+  .w3-xlarge {
+    font-size: 18px !important;
+  }
+}
+@media (min-width: 220px) and (max-width: 254px) {
+  h2#nome-h2 {
+    font-size: 145%;
+    padding: 10px 7px;
+  }
+  #email-text {
+    padding: 0.3rem 0.3rem;
+    font-size: 11px;
+  }
+  .email-ico {
+    margin-right: 12px;
+  }
+  .container-2 {
+    display: block;
+    align-items: center;
+    text-align: center;
+  }
+  .imgcopy {
+    width: 17px;
+    size: 17px;
+  }
+  .txt-copiar {
+    font-size: 11px;
+  }
+}
+@media (min-width: 255px) and (max-width: 349px) {
+  h2#nome-h2 {
+    font-size: 150%;
+    padding: 10px 7px;
+  }
+  #email-text {
+    padding: 0.4rem 0.4rem;
+    font-size: 12px;
+  }
+  .email-ico {
+    margin-right: 12px;
+  }
+  .container-2 {
+    display: block;
+    align-items: center;
+    text-align: center;
+  }
+  .imgcopy {
+    width: 17px;
+    size: 17px;
+  }
+  .txt-copiar {
+    font-size: 11px;
+  }
+}
+
+@media (min-width: 350px) and (max-width: 465px) {
+  #email-text {
+    padding: 0.4rem 0.4rem;
+    font-size: 12px;
+  }
+  .email-ico {
+    margin-right: 12px;
+  }
+  .container-2 {
+    display: block;
+    align-items: center;
+    text-align: center;
+  }
+  .imgcopy {
+    width: 17px;
+    size: 17px;
+  }
+  .txt-copiar {
+    font-size: 11px;
+  }
+  #home-icon {
+    margin-right: 12px;
+    text-align: left;
+  }
+  .w3-large {
+    font-size: 15px !important;
+  }
+  .w3-xlarge {
+    font-size: 18px !important;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 689px) {
+  * {
+    font-size: 96%;
+  }
+  #email-text {
+    padding: 0.3rem 0.3rem;
+    font-size: 11px;
+  }
+  .txt-copiar {
+    font-size: 11px;
+    text-align: center;
+  }
+  .imgcopy {
+    width: 17px;
+    size: 17px;
+  }
+  .email-ico {
+    left: 50%;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .container-2 {
+    display: block;
+    align-items: center;
+    text-align: center;
+  }
+  #home-icon {
+    margin-right: 12px;
+    text-align: left;
+  }
+  .w3-large {
+    font-size: 15px !important;
+  }
+  .w3-xlarge {
+    font-size: 18px !important;
+  }
+}
+
+@media (min-width: 690px) and (max-width: 735px) {
+  * {
+    font-size: 99%;
+  }
+  #email-text {
+    padding: 0.4rem 0.4rem;
+    font-size: 12px;
+  }
+  .txt-copiar {
+    font-size: 11px;
+  }
+  .imgcopy {
+    width: 17px;
+    size: 17px;
+  }
+  .email-ico {
+    left: 50%;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .container-2 {
+    display: block;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media (min-width: 736px) and (max-width: 834px) {
+  #email-text {
+    padding: 0.4rem 0.4rem;
+    font-size: 12px;
+  }
+  .txt-copiar {
+    font-size: 11px;
+  }
+  .imgcopy {
+    width: 17px;
+    size: 17px;
+  }
+  .email-ico {
+    left: 50%;
+    margin-right: -10px;
+    margin-bottom: 10px;
+  }
+  .container-2 {
+    display: block;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media (min-width: 835px) and (max-width: 889px) {
+  #email-text {
+    padding: 0.4rem 0.4rem;
+    font-size: 12px;
+  }
+  .email-ico {
+    margin-right: 5px;
+    padding-bottom: 10px;
+  }
+  .container-2 {
+    display: block;
+    align-items: center;
+    text-align: center;
+  }
+  .imgcopy {
+    width: 17px;
+    size: 17px;
+  }
+  .txt-copiar {
+    font-size: 11px;
+  }
+}
+
+@media (min-width: 890px) and (max-width: 965px) {
+  #email-text {
+    padding: 0.4rem 0.6rem;
+    font-size: 13px;
+  }
+  .email-ico {
+    margin-right: 12px;
+    padding-bottom: 15px;
+  }
+  .container-2 {
+    display: block;
+    align-items: center;
+    text-align: center;
+  }
+  .imgcopy {
+    width: 17px;
+    size: 17px;
+  }
+  .txt-copiar {
+    font-size: 11px;
+  }
+}
+
+@media (min-width: 966px) and (max-width: 1094px) {
+  #email-text {
+    padding: 0.4rem 0.6rem;
+    font-size: 15px;
+  }
+  .email-ico {
+    margin-right: 12px;
+    padding-bottom: 15px;
+  }
+  .container-2 {
+    display: block;
+    align-items: center;
+    text-align: center;
+  }
+  .imgcopy {
+    width: 17px;
+    size: 17px;
+  }
+  .txt-copiar {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 1095px) and (max-width: 1175px) {
+  #email-text {
+    padding: 0.4rem 0.6rem;
+    font-size: 11px;
+  }
+  span.email-copy-ico {
+    vertical-align: middle;
+    background-color: #cccccc;
+    padding: 0.4rem 0.6rem;
+  }
+  .imgcopy {
+    width: 15px;
+    size: 15px;
+  }
+  .txt-copiar {
+    font-size: 9px;
+  }
+  .div-emailcopy {
+    margin-right: 0;
+  }
+  .copy-div {
+    margin-right: -1rem;
+  }
+}
+
+@media (min-width: 1176px) and (max-width: 1335px) {
+  #email-text {
+    padding: 0.4rem 0.4rem;
+    font-size: 11px;
+  }
+  span.email-copy-ico {
+    background-color: #cccccc;
+    padding: 0.4rem 0.4rem;
+  }
+  .email-ico {
+    margin-right: 12px;
+  }
+  .imgcopy {
+    width: 17px;
+    size: 17px;
+  }
+  .txt-copiar {
+    font-size: 10px;
+  }
+}
