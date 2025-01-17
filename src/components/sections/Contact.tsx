@@ -1,4 +1,3 @@
-// src/components/sections/Contact/index.tsx
 import { Copy, Github, Instagram, Linkedin, Check, Mail, Phone } from 'lucide-react';
 import { useState } from 'react';
 

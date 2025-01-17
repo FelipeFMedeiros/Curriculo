@@ -1,4 +1,3 @@
-// src/App.tsx
 import Container from '@/components/layout/Container/Container';
 import Header from '@/components/sections/Header';
 import About from '@/components/sections/About';

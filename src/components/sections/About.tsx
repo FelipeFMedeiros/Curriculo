@@ -1,4 +1,3 @@
-// src/components/sections/About/index.tsx
 const About = () => {
     return (
         <section>

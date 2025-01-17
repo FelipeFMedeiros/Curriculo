@@ -1,4 +1,3 @@
-// src/components/layout/Container/index.tsx
 interface ContainerProps {
     children: React.ReactNode;
 }

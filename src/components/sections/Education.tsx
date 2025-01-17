@@ -1,4 +1,3 @@
-// src/components/sections/Education/index.tsx
 interface TimelineItemProps {
     period: string;
     title: string;
