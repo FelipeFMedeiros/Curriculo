@@ -1,4 +1,3 @@
-// src/components/sections/Skills/index.tsx
 interface Skill {
     name: string;
     level: number; // 1 a 5
