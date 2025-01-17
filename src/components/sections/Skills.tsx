@@ -55,7 +55,7 @@ const Skills = () => {
     return (
         <section>
             <h2 className="text-2xl font-semibold text-gray-900 mb-6">Habilidades Técnicas</h2>
-            <div className="grid gap-8 md:grid-cols-2">
+            <div className="grid gap-8 md:grid-cols-2 print:grid print:grid-cols-2 print:gap-4">
                 <SkillCategory
                     title="Front-end"
                     skills={[
