@@ -1,8 +1,8 @@
 // src/App.tsx
-import Container from '@components/layout/Container';
-import Header from '@components/sections/Header';
-import About from '@components/sections/About';
-import Education from '@components/sections/Education';
+import Container from '@/components/layout/Container/Container';
+import Header from '@/components/sections/Header';
+import About from '@/components/sections/About';
+import Education from '@/components/sections/Education';
 
 function App() {
     return (
