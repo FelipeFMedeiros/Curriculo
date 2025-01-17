@@ -50,10 +50,10 @@ const Education = () => {
                 <TimelineItem
                     period="2020 - 2022"
                     title="Ensino Médio"
-                    institution="Colégio de Aplicação da Universidade Católica de Petrópolis (CAUCP)"
+                    institution="Colégio Aplicação da Universidade Católica de Petrópolis (CAUCP)"
                     location="Petrópolis, RJ"
                 />
-                {/* Aqui podemos adicionar os cursos relevantes que você fez/está fazendo */}
+                {/* Aqui podemos adicionar cursos relevantes */}
             </div>
         </section>
     );

@@ -71,11 +71,20 @@ const PersonalProjects = () => {
             <div className="grid gap-4 md:grid-cols-2">
                 {/* Aqui você pode adicionar seus projetos pessoais */}
                 <PersonalProjectItem
-                    title="Portfolio Pessoal"
-                    description="Site pessoal desenvolvido com React e TypeScript, apresentando meus projetos e experiências de forma moderna e responsiva."
-                    technologies={['React', 'TypeScript', 'Tailwind CSS', 'Vite']}
-                    githubUrl="https://github.com/seu-usuario/portfolio"
-                    liveUrl="https://seu-portfolio.com"
+                    title="Voyagee - Sistema de Gestão de Viagens"
+                    description="Desenvolvimento de diagramas de sequência UML para modelagem de sistema de planejamento de viagens. Documentação detalhada das interações entre objetos, fluxos de operações e arquitetura do sistema."
+                    technologies={[
+                        'React',
+                        'TypeScript',
+                        'Tailwind CSS',
+                        'Vite',
+                        'MySQL',
+                        'Node.js',
+                        'UML',
+                        'Documentação Técnica',
+                    ]}
+                    githubUrl="https://github.com/FelipeFMedeiros/Voyagee"
+                    liveUrl="https://voyagee.vercel.app/"
                 />
                 {/* Adicione mais projetos aqui */}
             </div>

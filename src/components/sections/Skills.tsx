@@ -61,32 +61,32 @@ const Skills = () => {
                     title="Front-end"
                     skills={[
                         { name: 'React.js', level: 5, yearsOfExperience: 2 },
-                        { name: 'TypeScript', level: 4, yearsOfExperience: 2 },
-                        { name: 'JavaScript', level: 5, yearsOfExperience: 3 },
-                        { name: 'Tailwind CSS', level: 4, yearsOfExperience: 2 },
+                        { name: 'TypeScript', level: 4, yearsOfExperience: 1 },
+                        { name: 'JavaScript', level: 5, yearsOfExperience: 2 },
+                        { name: 'Tailwind CSS', level: 4, yearsOfExperience: 1 },
                         { name: 'HTML5/CSS3', level: 5, yearsOfExperience: 3 },
-                        { name: 'Next.js', level: 3, yearsOfExperience: 1 },
+                        { name: 'Next.js', level: 1, yearsOfExperience: 1 },
                     ]}
                 />
                 <SkillCategory
                     title="Back-end"
                     skills={[
-                        { name: 'C#/.NET', level: 4, yearsOfExperience: 2 },
+                        { name: 'C#/.NET', level: 4, yearsOfExperience: 1 },
                         { name: 'Node.js', level: 4, yearsOfExperience: 2 },
                         { name: 'REST APIs', level: 4, yearsOfExperience: 2 },
-                        { name: 'SQL Server', level: 3, yearsOfExperience: 2 },
-                        { name: 'MySQL', level: 4, yearsOfExperience: 2 },
-                        { name: 'MongoDB', level: 3, yearsOfExperience: 1 },
+                        { name: 'SQL Server', level: 3, yearsOfExperience: 1 },
+                        { name: 'MySQL', level: 4, yearsOfExperience: 1 },
+                        { name: 'MongoDB', level: 2, yearsOfExperience: 1 },
                     ]}
                 />
                 <SkillCategory
                     title="DevOps & Ferramentas"
                     skills={[
-                        { name: 'Git/GitHub', level: 5, yearsOfExperience: 3 },
-                        { name: 'Docker', level: 3, yearsOfExperience: 1 },
-                        { name: 'Azure DevOps', level: 3, yearsOfExperience: 1 },
+                        { name: 'Git/GitHub', level: 5, yearsOfExperience: 2 },
+                        { name: 'Figma', level: 4, yearsOfExperience: 2 },
+                        { name: 'Github Actions', level: 3, yearsOfExperience: 1 },
                         { name: 'VS Code', level: 5, yearsOfExperience: 3 },
-                        { name: 'Visual Studio', level: 4, yearsOfExperience: 2 },
+                        { name: 'Visual Studio', level: 4, yearsOfExperience: 1 },
                     ]}
                 />
                 <SkillCategory
